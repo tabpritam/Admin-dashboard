@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #307BF4;
+    --color-white: #ffffff;
+    --color-dark: #131517;
+    --color-card-background: #1E1F25;
+    --color-light-gray: #84849D;
+    --color-green: #29BB89;
+    --color-pink: #FF0073;
+    --color-purple: #724EE6;
+    --color-orange: #F6C059;
+}
+
+body {
+    background-color: var(--color-dark);
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0.2rem;
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+}
+
+/* google icon */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+
+/* universal css */
+p {
+    color: var(--color-light-gray);
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.015rem;
+}
+
+.card-background {
+    background-color: var(--color-card-background);
+}
+
+.rounded-btn {
+    border-radius: 2rem;
+    font-weight: 600;
+}
+
+.body-containier {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+}
+
+
+
+
+/* sidenav css start */
+/* sidebar-top css start */
+ul.nav {
+    gap: 1rem;
+}
+
+.sidebar-top .nav .nav-link {
+    color: var(--color-light-gray);
+    transition: 0.5s;
+}
+
+.sidebar-top .nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.sidebar-nav-icon {
+
+    font-size: 1.5rem;
+}
+
+.sidebar-nav-links {
+    padding-left: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.375rem;
+    letter-spacing: 0.0175rem;
+}
+
+/* nav active */
+a.nav-link.active {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+a.nav-link.active .sidebar-nav-icon,
+a.nav-link.active .sidebar-nav-links {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+/* sidebar-top CSS end */
+/* sidebar-bottom CSS start */
+.sidebar-bottom .upgrade-banner {
+    background-color: var(--primary-color);
+    padding: 2.37rem 1.31rem;
+    border-radius: 1rem;
+}
+
+.btn-dark-text {
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    transition: 0.3s;
+}
+
+.btn-dark-text:hover {
+    border: 2px solid var(--color-white);
+    color: var(--color-primary);
+}
+
+.upgrade-banner p {
+    color: var(--color-white);
+}
+
+/* sidebar-bottom CSS end */
+/* sidenav css end */
+/* right side css start */
+.right-side {
+    padding: 2.06rem;
+}
+
+.card-bg-color {
+    background: var(--color-card-background);
+}
+
+.search-box input {
+    border: none;
+    border-radius: 0.5rem;
+    height: 2.7rem;
+}
+
+.search-box input::placeholder {
+    color: var(--color-light-gray);
+}
+
+.search-box form {
+    position: relative;
+}
+
+.search-box .searchButton {
+    position: absolute;
+    right: 20px;
+}
+
+.searchButton span {
+    color: var(--color-light-gray);
+    background-color: transparent !important;
+    line-height: 2;
+}
+
+/* notificatio bell */
+.notification {
+    position: relative;
+}
+
+.notification-icon span {
+    color: var(--color-light-gray);
+    font-size: 1.5rem;
+}
+
+.notification-count {
+    color: var(--color-white);
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: var(--primary-color);
+    line-height: 0.3rem;
+    padding: 0.3rem;
+    border-radius: 4rem;
+    font-size: 0.8rem;
+}
+
+.user-image {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary-color);
+    border-radius: 4rem;
+}
+
+.user-name {
+    color: var(--color-white);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    letter-spacing: 0.0175rem;
+}
+
+.user-dropdown a span {
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+
+/* information card css start */
+
+.information-card {
+    padding: 2rem;
+    border-radius: 0.625rem;
+    gap: 3rem;
+}
+
+.info-title {
+    color: var(--color-white);
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+}
+
+.card-inner-dot {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 4rem;
+}
+
+.total-follower .card-inner-dot {
+    background-color: var(--color-green);
+}
+
+.new-likes .card-inner-dot {
+    background-color: var(--primary-color);
+}
+
+.comment .card-inner-dot {
+    background-color: var(--color-pink);
+}
+
+.total-post .card-inner-dot {
+    background-color: var(--color-purple);
+}
+
+.blocked-account .card-inner-dot {
+    background-color: var(--color-orange);
+}
+
+.data-numeric .count {
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+}
+
+.data-numeric .growth {
+    color: var(--color-green);
+}
+
+.chart-card {
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    color: var(--color-white);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+/* information card css end */
